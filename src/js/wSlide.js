@@ -26,8 +26,6 @@ var wSlide = function(){
 			itemNext = document.getElementsByClassName(classItemNext),
 			itemPrev = document.getElementsByClassName(classItemPrev);
 
-		console.log(totalItems);
-
 		// Settings initial
 		var settingsInitial = function(){
 			var widthContainer = slide[0].offsetWidth,
@@ -218,8 +216,5 @@ var wSlide = function(){
 		}();
 
 	}();
-
-	// Verify if there are slides on page for call function init
-	// if (slide.length) initSlide();
 
 };
