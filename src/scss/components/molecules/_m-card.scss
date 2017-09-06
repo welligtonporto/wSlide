@@ -1,0 +1,73 @@
+/*
+ * Card
+ */
+
+.m-card {
+	&__link {
+		display: block;
+		padding: $space-2;
+		text-decoration: none;
+		@include transition(background .3s);
+		position: relative;
+
+		&::before {
+			content: " ";
+			@include opacity(0);
+			@include transition(opacity .4s);
+		}
+
+		&:hover::before {
+			display: block;
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			padding: $space-1;
+			@include background-image(linear-gradient($color-secondary--light, $color-bg));
+			@include opacity(1);
+		}
+	}
+
+	* {
+		position: relative;
+	}
+
+	&__image {
+		background-color: #FFF;
+		margin: 0 auto $space-2;
+		text-align: center;
+
+		img {
+			display: inline-block;
+		}
+	}
+
+	&__title {
+		margin: 0 0 $space-2 0;
+		line-height: $line-height-text;
+		@extend %text-overflow-3-lines;
+	}
+
+	&__price {
+		&-old {
+			display: block;
+			margin: 0 0 $space-1 0;
+		}
+
+		&-primary {
+			display: block;
+			color: $color-price;
+			margin: 0 0 $space-1 0;
+
+			strong {
+				@include font-size($display-3);
+			}
+		}
+
+		&-conditions {
+			display: block;
+			color: $color-price;
+		}
+	}
+}

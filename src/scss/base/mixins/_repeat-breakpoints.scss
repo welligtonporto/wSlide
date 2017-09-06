@@ -1,0 +1,51 @@
+/*
+ * Repeat in all breakpoints
+ */
+
+@mixin repeatInAllBreakpoints($part1, $part2: null) {
+	@if ($part2) {
+		.#{$part1}-xs-#{$part2} {
+			@content;
+		}
+
+		@include breakpoint(s){
+	    	.#{$part1}-s-#{$part2} {
+	    		@content;
+	    	}
+	    }
+
+	    @include breakpoint(m){
+	    	.#{$part1}-m-#{$part2} {
+	    		@content;
+	    	}
+	    }
+
+	    @include breakpoint(l){
+	    	.#{$part1}-l-#{$part2} {
+	    		@content;
+	    	}
+	    }
+    } @else {
+		.#{$part1}-xs {
+			@content;
+		}
+
+		@include breakpoint(s){
+		    .#{$part1}-s {
+				@content;
+			}
+	    }
+
+	    @include breakpoint(m){
+		    .#{$part1}-m {
+				@content;
+			}
+	    }
+
+	    @include breakpoint(l){
+		    .#{$part1}-l {
+				@content;
+			}
+	    }
+    }
+}

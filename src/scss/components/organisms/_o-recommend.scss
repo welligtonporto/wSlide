@@ -1,0 +1,18 @@
+/*
+ * Recommend
+ */
+
+.o-recommend {
+	margin: 0 0 $space-4;
+
+	&__display {
+		padding: $space-2;
+		background-color: $color-secondary--light;
+		@include background-image(linear-gradient(to bottom,
+			lighten($color-secondary--light, 6) 0%,
+			lighten($color-secondary--light, 3) 50%,
+			$color-secondary--light 51%,
+			darken($color-secondary--light, 3) 100%
+		));
+	}
+}

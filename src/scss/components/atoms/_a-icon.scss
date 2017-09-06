@@ -1,0 +1,38 @@
+/*
+* Icons
+*/
+
+@font-face {
+  font-family: 'icons';
+  src: url('../../dist/icons/icons.eot');
+  src: url('../../dist/icons/icons.eot#iefix') format('embedded-opentype'),
+       url('../../dist/icons/icons.woff2') format('woff2'),
+       url('../../dist/icons/icons.woff') format('woff'),
+       url('../../dist/icons/icons.ttf') format('truetype'),
+       url('../../dist/icons/icons.svg#icons') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="a-icon__"], [class*=" a-icon__"], %a-icon {
+  display: inline-block;
+  @include font-size($size-icon);
+}
+ 
+[class^="a-icon__"]:before, [class*=" a-icon__"]:before, %a-icon:before {
+  font-family: "icons";
+  font-style: normal;
+  font-weight: normal;
+  speak: none;
+  line-height: 1;
+  display: inline-block;
+  text-decoration: inherit;
+  text-align: center;
+  font-variant: normal;
+  text-transform: none;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.a-icon__right:before { content: '\e800'; } /* '' */
+.a-icon__left:before { content: '\e801'; } /* '' */

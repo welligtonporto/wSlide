@@ -1,0 +1,78 @@
+/*
+* wSlide
+*/
+
+.wSlide {
+	width: 100%;
+	overflow: hidden;
+	position: relative;
+
+	&__items {
+		width: 5000px; // temp
+		display: inline-block;
+		@include transition(transform .3s);
+	}
+
+	&__item {
+		float: left;
+	}
+
+	&__nav {
+		display: none;
+
+		&--prev {
+			@extend .wSlide__nav;
+			left: 0;
+
+			i {
+				left: 0;
+			}
+
+			&.wSlide__nav--activeWhite {
+				@include background-image(linear-gradient(to right, #FFF 20%, transparent 100%));
+			}
+		}
+		
+		&--next {
+			@extend .wSlide__nav;
+			right: 0;
+
+			i {
+				right: 0;
+			}
+
+			&.wSlide__nav--activeWhite {
+				@include background-image(linear-gradient(to left, #FFF 20%, transparent 100%));
+			}
+		}
+
+		&--active {
+			display: block;
+			position: absolute;
+			top: 0;
+			color: $color-secondary;
+			cursor: pointer;
+			@include transition(width .3s);
+
+			&:hover {
+				color: $color-price;
+			}
+
+			i {
+				position: absolute;
+				top: 80px;
+				width: 30px;
+				height: 30px;
+			}
+		}
+
+		&--activeWhite {
+			width: 70px;
+			height: 100%;
+
+			&:hover {
+				width: 100px;
+			}
+		}
+	}
+}

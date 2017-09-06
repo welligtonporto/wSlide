@@ -1,0 +1,26 @@
+/*
+ * Helpers
+ */
+
+%clearfix, .clearfix {
+	&:after {
+		content: "";
+		clear: both;
+		display: table;
+	}
+}
+
+%text-overflow {
+	text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+%text-overflow-3-lines {
+	display: block;
+	display: -webkit-box;
+	-webkit-line-clamp: 3;
+	-webkit-box-orient: vertical;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}

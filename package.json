@@ -1,0 +1,27 @@
+{
+  "name": "arcade",
+  "version": "2.0.0",
+  "description": "CSS Framework by Welligton Luiz Porto & Igor Fagundes de Souza",
+  "main": "gulpfile.js",
+  "private": true,
+  "engines": {
+    "node": ">=4.4.0"
+  },
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-clean-css": "^2.0.11",
+    "gulp-compass": "^2.1.0",
+    "gulp-group-css-media-queries": "^1.2.0",
+    "gulp-uglify": "^2.1.2",
+    "gulp-concat": "^2.6.1"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "ssh://git-codecommit.us-east-1.amazonaws.com/v1/repos/ARCADE"
+  },
+  "author": "Welligton Luiz Porto & Igor Fagundes de Souza",
+  "license": "ISC"
+}

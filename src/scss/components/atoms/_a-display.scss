@@ -1,0 +1,14 @@
+/*
+* Display
+*/
+
+.a-display {
+  display: block;
+  margin: 0 0 $space-2 0;
+  color: $color-secondary;
+
+  &--3 {
+    @extend .a-display;
+    @include font-size($display-3);
+  }
+}

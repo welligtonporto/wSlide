@@ -1,0 +1,48 @@
+/*!
+ * wSlide Demo Page v1.0.0
+ * Copyright 2017
+ * Developed by Welligton Porto (welligtonporto@gmail.com)
+ */
+
+@import "compass/css3/";
+@import "compass/css3/flexbox";
+@import "compass/support";
+
+/* Base */
+
+// Vars
+@import "base/vars/_type";
+@import "base/vars/_colors";
+@import "base/vars/_spaces";
+@import "base/vars/_general";
+
+// Mixins
+@import "base/mixins/_font-size";
+@import "base/mixins/_breakpoint";
+@import "base/mixins/_repeat-breakpoints";
+
+// General
+@import "base/_helpers";
+@import "base/_z-index";
+@import "base/_reset";
+@import "base/_grid";
+@import "base/_globals";
+
+/* Components */
+
+// Atoms
+@import "components/atoms/_a-display";
+@import "components/atoms/_a-icon";
+
+// Molecules
+@import "components/molecules/_m-card";
+
+// Organisms
+@import "components/organisms/_o-recommend";
+
+// Templates
+
+// Pages
+
+/* Scripts */
+@import "scripts/_wSlide";
