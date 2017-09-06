@@ -4,7 +4,7 @@ var callJson = function(){
     document.getElementsByTagName('body')[0].appendChild(script);
 }();
 
-var X = function(data){
+var X = function(data){ // Because error at Json
     createItems(data.data.reference.item, "reference");
     createItems(data.data.recommendation, "recommendation");
 }
