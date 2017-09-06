@@ -1,6 +1,6 @@
 var callJson = function(){
     var script = document.createElement('script');
-    script.src = "http://roberval.chaordicsystems.com/challenge/challenge.json?callback=X";
+    script.src = "https://roberval.chaordicsystems.com/challenge/challenge.json?callback=X";
     document.getElementsByTagName('body')[0].appendChild(script);
 }();
 
